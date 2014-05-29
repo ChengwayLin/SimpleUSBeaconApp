@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		939CB817192F272C006EF894 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 939CB816192F272C006EF894 /* libsqlite3.dylib */; };
+		939CB819192F2736006EF894 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 939CB818192F2736006EF894 /* libz.dylib */; };
+		939CB81D192F2840006EF894 /* BeaconDetect.m in Sources */ = {isa = PBXBuildFile; fileRef = 939CB81C192F2840006EF894 /* BeaconDetect.m */; };
+		93AC83D1193708B900DB5012 /* USBeaconDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AC83CD193708B900DB5012 /* USBeaconDevice.m */; };
+		93AC83D2193708B900DB5012 /* USBeaconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AC83CF193708B900DB5012 /* USBeaconInfo.m */; };
+		93AC83D619370AE600DB5012 /* USBCManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AC83D519370AE600DB5012 /* USBCManager.a */; };
 		93B044AB19260A9100E14202 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B044AA19260A9100E14202 /* Foundation.framework */; };
 		93B044AD19260A9100E14202 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B044AC19260A9100E14202 /* CoreGraphics.framework */; };
 		93B044AF19260A9100E14202 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B044AE19260A9100E14202 /* UIKit.framework */; };
@@ -19,8 +25,6 @@
 		93B044CA19260A9100E14202 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B044C919260A9100E14202 /* XCTest.framework */; };
 		93B044CB19260A9100E14202 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B044AA19260A9100E14202 /* Foundation.framework */; };
 		93B044CC19260A9100E14202 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B044AE19260A9100E14202 /* UIKit.framework */; };
-		93B044D419260A9100E14202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93B044D219260A9100E14202 /* InfoPlist.strings */; };
-		93B044D619260A9100E14202 /* SimpleUSBeaconAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B044D519260A9100E14202 /* SimpleUSBeaconAppTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		939CB814192F2711006EF894 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		939CB816192F272C006EF894 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		939CB818192F2736006EF894 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		939CB81B192F2840006EF894 /* BeaconDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeaconDetect.h; path = "../USBeaconSDK/Beacon Detect/BeaconDetect.h"; sourceTree = "<group>"; };
+		939CB81C192F2840006EF894 /* BeaconDetect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeaconDetect.m; path = "../USBeaconSDK/Beacon Detect/BeaconDetect.m"; sourceTree = "<group>"; };
+		93AC83CB193708B900DB5012 /* USBCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBCManager.h; path = ../USBeaconSDK/USBeaconManager/USBCManager.h; sourceTree = "<group>"; };
+		93AC83CC193708B900DB5012 /* USBeaconDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBeaconDevice.h; path = ../USBeaconSDK/USBeaconManager/USBeaconDevice.h; sourceTree = "<group>"; };
+		93AC83CD193708B900DB5012 /* USBeaconDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USBeaconDevice.m; path = ../USBeaconSDK/USBeaconManager/USBeaconDevice.m; sourceTree = "<group>"; };
+		93AC83CE193708B900DB5012 /* USBeaconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBeaconInfo.h; path = ../USBeaconSDK/USBeaconManager/USBeaconInfo.h; sourceTree = "<group>"; };
+		93AC83CF193708B900DB5012 /* USBeaconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USBeaconInfo.m; path = ../USBeaconSDK/USBeaconManager/USBeaconInfo.m; sourceTree = "<group>"; };
+		93AC83D519370AE600DB5012 /* USBCManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = USBCManager.a; path = ../USBeaconSDK/USBeaconManager/USBCManager.a; sourceTree = "<group>"; };
 		93B044A719260A9100E14202 /* SimpleUSBeaconApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleUSBeaconApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B044AA19260A9100E14202 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93B044AC19260A9100E14202 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,9 +65,6 @@
 		93B044C219260A9100E14202 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93B044C819260A9100E14202 /* SimpleUSBeaconAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleUSBeaconAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B044C919260A9100E14202 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		93B044D119260A9100E14202 /* SimpleUSBeaconAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleUSBeaconAppTests-Info.plist"; sourceTree = "<group>"; };
-		93B044D319260A9100E14202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		93B044D519260A9100E14202 /* SimpleUSBeaconAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleUSBeaconAppTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AC83D619370AE600DB5012 /* USBCManager.a in Frameworks */,
+				939CB819192F2736006EF894 /* libz.dylib in Frameworks */,
+				939CB817192F272C006EF894 /* libsqlite3.dylib in Frameworks */,
 				93B044AD19260A9100E14202 /* CoreGraphics.framework in Frameworks */,
 				93B044AF19260A9100E14202 /* UIKit.framework in Frameworks */,
 				93B044AB19260A9100E14202 /* Foundation.framework in Frameworks */,
@@ -79,13 +94,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		939CB80A192F2573006EF894 /* USBCManger */ = {
+			isa = PBXGroup;
+			children = (
+				93AC83D519370AE600DB5012 /* USBCManager.a */,
+				93AC83CB193708B900DB5012 /* USBCManager.h */,
+				93AC83CC193708B900DB5012 /* USBeaconDevice.h */,
+				93AC83CD193708B900DB5012 /* USBeaconDevice.m */,
+				93AC83CE193708B900DB5012 /* USBeaconInfo.h */,
+				93AC83CF193708B900DB5012 /* USBeaconInfo.m */,
+			);
+			name = USBCManger;
+			sourceTree = "<group>";
+		};
+		939CB81A192F277A006EF894 /* Beacon Detect */ = {
+			isa = PBXGroup;
+			children = (
+				939CB81B192F2840006EF894 /* BeaconDetect.h */,
+				939CB81C192F2840006EF894 /* BeaconDetect.m */,
+			);
+			name = "Beacon Detect";
+			sourceTree = "<group>";
+		};
+		93AC83D719371D9500DB5012 /* USBeaconSDK */ = {
+			isa = PBXGroup;
+			children = (
+				939CB81A192F277A006EF894 /* Beacon Detect */,
+				939CB80A192F2573006EF894 /* USBCManger */,
+			);
+			name = USBeaconSDK;
+			path = SimpleUSBeaconApp;
+			sourceTree = "<group>";
+		};
 		93B0449E19260A9100E14202 = {
 			isa = PBXGroup;
 			children = (
+				93AC83D719371D9500DB5012 /* USBeaconSDK */,
 				93B044B019260A9100E14202 /* SimpleUSBeaconApp */,
-				93B044CF19260A9100E14202 /* SimpleUSBeaconAppTests */,
-				93B044A919260A9100E14202 /* Frameworks */,
-				93B044A819260A9100E14202 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,17 +141,22 @@
 				93B044C819260A9100E14202 /* SimpleUSBeaconAppTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		93B044A919260A9100E14202 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				939CB818192F2736006EF894 /* libz.dylib */,
+				939CB816192F272C006EF894 /* libsqlite3.dylib */,
+				939CB814192F2711006EF894 /* libsqlite3.0.dylib */,
 				93B044AA19260A9100E14202 /* Foundation.framework */,
 				93B044AC19260A9100E14202 /* CoreGraphics.framework */,
 				93B044AE19260A9100E14202 /* UIKit.framework */,
 				93B044C919260A9100E14202 /* XCTest.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		93B044B019260A9100E14202 /* SimpleUSBeaconApp */ = {
@@ -118,6 +168,8 @@
 				93B044BF19260A9100E14202 /* SimpleViewController.h */,
 				93B044C019260A9100E14202 /* SimpleViewController.m */,
 				93B044C219260A9100E14202 /* Images.xcassets */,
+				93B044A919260A9100E14202 /* Frameworks */,
+				93B044A819260A9100E14202 /* Products */,
 				93B044B119260A9100E14202 /* Supporting Files */,
 			);
 			path = SimpleUSBeaconApp;
@@ -130,24 +182,6 @@
 				93B044B319260A9100E14202 /* InfoPlist.strings */,
 				93B044B619260A9100E14202 /* main.m */,
 				93B044B819260A9100E14202 /* SimpleUSBeaconApp-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		93B044CF19260A9100E14202 /* SimpleUSBeaconAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				93B044D519260A9100E14202 /* SimpleUSBeaconAppTests.m */,
-				93B044D019260A9100E14202 /* Supporting Files */,
-			);
-			path = SimpleUSBeaconAppTests;
-			sourceTree = "<group>";
-		};
-		93B044D019260A9100E14202 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				93B044D119260A9100E14202 /* SimpleUSBeaconAppTests-Info.plist */,
-				93B044D219260A9100E14202 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B044D419260A9100E14202 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +285,10 @@
 			files = (
 				93B044BB19260A9100E14202 /* SimpleAppDelegate.m in Sources */,
 				93B044C119260A9100E14202 /* SimpleViewController.m in Sources */,
+				93AC83D1193708B900DB5012 /* USBeaconDevice.m in Sources */,
+				939CB81D192F2840006EF894 /* BeaconDetect.m in Sources */,
 				93B044B719260A9100E14202 /* main.m in Sources */,
+				93AC83D2193708B900DB5012 /* USBeaconInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B044D619260A9100E14202 /* SimpleUSBeaconAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +324,6 @@
 				93B044BD19260A9100E14202 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		93B044D219260A9100E14202 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93B044D319260A9100E14202 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -334,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -380,6 +407,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleUSBeaconApp/SimpleUSBeaconApp-Prefix.pch";
 				INFOPLIST_FILE = "SimpleUSBeaconApp/SimpleUSBeaconApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleUSBeaconApp",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +425,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleUSBeaconApp/SimpleUSBeaconApp-Prefix.pch";
 				INFOPLIST_FILE = "SimpleUSBeaconApp/SimpleUSBeaconApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleUSBeaconApp",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +494,7 @@
 				93B044DB19260A9100E14202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93B044DC19260A9100E14202 /* Build configuration list for PBXNativeTarget "SimpleUSBeaconAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +503,7 @@
 				93B044DE19260A9100E14202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SimpleViewController : UIViewController
+
+//Fetch USBeacon Data On usbeacon.com.tw
+#import "USBCManager.h"
+#import "USBeaconDevice.h"
+#import "USBeaconInfo.h"
+
+//Help you quick setup iBeacon Detect
+#import "BeaconDetect.h"
+
+
+@interface SimpleViewController : UIViewController <USBCManagerDelegate,BeaconDetectDelegate>
 
 @end
