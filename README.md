@@ -11,6 +11,9 @@ After fetching process completes, the app start to range nearby iBeacons. In thi
 
 
 |   name   | UUID | Major | Minor |
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |  ------------- |
 | BEACON1  | E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 | 99 | 0 |
 | BEACON2  | E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 | 99 | 1 |
+| BEACON1  | E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 | 99 | 2 |
+| BEACON2  | E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 | 99 | 3 |
+
