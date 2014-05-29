@@ -22,3 +22,12 @@ The corresponding data would be displayed.  If the nearest iBeacon around your d
 | BEACON2  | E2C56DB5-DFFB-48D2-B060-D0F5A71096E0 | 99 | 3 |
 
 
+<br>
+
+USBeaconSDK
+=================
+
+##USBeaconManager Class##
+###Overview###
+
+The USBeaconManager declares the programmatic interface for fetching Beacon related data from server of http://www.usbeacon.com.tw and manage local beacon data for developer.
