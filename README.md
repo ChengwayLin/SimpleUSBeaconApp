@@ -84,7 +84,7 @@ Tells the delegate that data update process errors occured.
 
 ##USBeaconDevice Class##
 ###Overview###
-The CLBeacon class represents a USBeacon data with a specific pair of Major/Minor. In most case, you do not create instances of this class directly. The USBeaconManager object return data in this model class for you.
+The USBeaconDevice class represents a usbeacon data with a specific pair of major/minor. In most case, you do not create instances of this class directly. The USBeaconManager object return data in this model class for you.
 ###Properties###
 ```
 @property int major;
@@ -146,6 +146,40 @@ NSlog this USBeaconDevice.
 
 ##USBeaconInfo Class##
 ###Overview###
-
+###Properties###
+```
+@property (nonatomic,retain) NSString * tel;
+```
+**tel**<br> 
+```
+@property (nonatomic,retain) NSString * url;
+```
+**url**<br> 
+NSlog this USBeaconDevice.
+```
+@property (nonatomic,retain) NSString * img;
+```
+**img**<br> 
+NSlog this USBeaconDevice.
+```
+@property (nonatomic,retain) NSString * note;
+```
+**note**<br> 
+NSlog this USBeaconDevice.
+```
+@property (nonatomic,retain) NSString * youtube;
+```
+**youtube**<br> 
+NSlog this USBeaconDevice.
+```
+@property (nonatomic,retain) NSString * describe;
+```
+**describe**<br> 
+NSlog this USBeaconDevice.
+```
+@property (nonatomic,retain) NSDictionary * extend;
+```
+**extend**<br> 
+NSlog this USBeaconDevice.
 
 
