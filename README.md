@@ -253,3 +253,11 @@ would be called, when nearistBeacon property changes.
 ```
 **- beaconListChangeTo:**<br> 
 would be called everytime the systme updated new ranged iBeacons.
+
+
+How to start use USBeacon SDK in your project
+=================
+1. drap USBeaconSDK folder in to your Xcode Project (Make sure you check you project name at Add to Target )
+2. In Build Phases > Link Binary with Libraries, add 'libz.dylib' and 'libsqlite3.dylib'
+3. In Build Setting > Linking > Other Linker Flags, if right field is empty, then add -ObjC. (This is because USbeaconManager.a is based on FMDB. and FMDM has .o file)
+
