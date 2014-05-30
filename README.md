@@ -80,3 +80,47 @@ Tells the delegate that data update process completed.
 -(void)USBCManagerUpdateError:(NSError*)error;
 ```
 Tells the delegate that data update process errors occured.
+<br><br>
+
+##USBeaconDevice Class##
+###Overview###
+The CLBeacon class represents a USBeacon data with a specific pair of Major/Minor. In most case, you do not create instances of this class directly. The USBeaconManager object return data in this model class for you.
+```
+@property int major;
+```
+```
+@property int major;
+```
+```
+@property int minor;
+```
+```
+@property (nonatomic,retain) NSString * name;
+```
+```
+@property (nonatomic,retain) USBeaconInfo * info;
+```
+```
+@property (nonatomic,retain) USBeaconInfo * infoAtImmediate;
+```
+```
+@property (nonatomic,retain) USBeaconInfo * infoAtNear;
+```
+```
+@property (nonatomic,retain) USBeaconInfo * infoAtFar;
+```
+```
+@property (nonatomic,retain) USBeaconInfo * infoAtUnknownProximity;
+```
+```
++ (USBeaconDevice * )deviceWithMajor:(int)major Minor:(int)minor Name:(NSString*)name;
+```
+```
+-(void)logDevice;
+```
+
+##USBeaconInfo Class##
+###Overview###
+
+
+
