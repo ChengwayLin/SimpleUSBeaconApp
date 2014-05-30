@@ -182,24 +182,32 @@ extented data you defined on website is stored as NSDictionary in this extend pr
 
 ##BeaconDetect Class##
 ###Overview###
-BeaconDetect is a helper class based on iOS CoreLocation framework. It is to help you quick set up iBeacon ranging process. 
+BeaconDetect is a helper class based on iOS CoreLocation framework. It is to help you quickly set up iBeacon ranging process. It has some filter method let you sort CLbeacon Arrays with UUID/RSSI or return an array without iBeacon in Unknown Proximity. 
 
 ###Properties###
 ```
 @property (nonatomic,retain) NSMutableArray * targetUUIDs;
 ```
+Targeted uuids that BeaconDetect object is searching for. If you initialized this object with **+ detectBeaconWithUUIDs:** method, then it stored uuids in targetUUIDs.
 ```
 @property (nonatomic,retain) NSString * targetUUID;
 ```
+The only targeted uuid that BeaconDetect object is searching for. If you initialized this object with **+ detectBeaconWithUUID:** method, then the uuid is assigned to targetUUID.
 ```
 @property (nonatomic,retain) NSArray * beaconList;
 ```
+**beaconList**<br>
+This array maintains all CLbeacons ranged by the system. The contain all beacons from all targeted uuids. Every time system range beacons, BeaconDetect call delegate method **- nearestBeaconChangeTo:**
 ```
 @property (nonatomic,retain) CLBeacon * nearistBeacon;
 ```
+**nearistBeacon**<br>
+The property hold the nearist beacon around your iDevice. When nearistBeacon changed, it calls delegate method **- beaconListChangeTo:**.
 ```
 @property (nonatomic,retain) id <BeaconDetectDelegate> delegate;
 ```
+**delegate**<br>
+The delegate object to receive update event.
 
 
 ###Methods###
@@ -227,4 +235,18 @@ NSlog this USBeaconDevice.
 -(NSArray*)beaconsSortedByRSSI:(NSArray*)original;
 ```
 **- beaconsSortedByRSSI:**<br> 
+NSlog this USBeaconDevice.
+
+###BeaconDetectDelegate Protocol###
+
+**@optional**<br>
+```
+-(void)nearestBeaconChangeTo:(CLBeacon*)beacon;
+```
+**- nearestBeaconChangeTo:**<br> 
+NSlog this USBeaconDevice.
+```
+-(void)beaconListChangeTo:(NSArray*)beacons;
+```
+**- beaconListChangeTo:**<br> 
 NSlog this USBeaconDevice.
