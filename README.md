@@ -44,8 +44,8 @@ The USBeaconManager declares the programmatic interface for fetching Beacon rela
 ```objc
 -(void)updateDevicesWithDataQueryUUID:(NSString*)dataQueryUUID;
 ```
-**- updateDevicesWithDataQueryUUID:** fetch beacon data from specific account Data Query UUID. You can register your own account on www.usbeacon.com.tw. Fetched beacon data will be stored on local. After data fetched and stored, **USBeaconManager** calls **-USBCManagerUpdateComplete** delegate method to inform your app. If error happens during data downloading, it inform app through  **- USBCManagerUpdateError:**. <br>
-To use local data, you can call **- deviceWithMajor: Minor:**, that would retun local data in **USBeaconDevice** object. Besides, you can also call **- allDevices**, that would return all local data in an NSArray of **USBeaconDevice**;
+**- updateDevicesWithDataQueryUUID:** fetch beacon data from specific account Data Query UUID. You can register your own account on www.usbeacon.com.tw. Fetched beacon data will be stored on local. After data fetched and stored, **USBeaconManager** calls **-USBCManagerUpdateComplete** delegate method to inform your app. If error happens during data downloading, it informs app through  **- USBCManagerUpdateError:**. <br><br>
+To use local data, you can call **- deviceWithMajor: Minor:**, that would retun local data in **USBeaconDevice** object. Besides, you can also call **- allDevices** ,that would return all local data in an NSArray of **USBeaconDevice**;
 
 ```objc
 -(USBeaconDevice *)deviceWithMajor:(int)major Minor:(int)minor;
@@ -54,7 +54,6 @@ To use local data, you can call **- deviceWithMajor: Minor:**, that would retun 
 
 ```objc
 -(NSArray *)allDevices;
-
 ```
 **- allDevices** return an NSArray of **USBeaconDevice** ,that contains all local usbeacon device data.
 
