@@ -40,7 +40,7 @@ The USBeaconManager declares the programmatic interface for fetching Beacon rela
 ```objc
 + (USBCManager *)defaultManager;
 ```
-**+ defaultManager**
+**+ defaultManager**<br>
 Returns an USBeaconManager object. (NOTE:This object is neither static nor singleton. So declare it as a property in your viewCotroller.)
 <br><br>
 ```objc
