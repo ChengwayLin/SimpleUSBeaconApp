@@ -24,10 +24,31 @@ The corresponding data would be displayed.  If the nearest iBeacon around your d
 
 <br>
 
-USBeaconSDK
+USBeaconSDK (Beta)
 =================
 
 ##USBeaconManager Class##
 ###Overview###
 
 The USBeaconManager declares the programmatic interface for fetching Beacon related data from server of http://www.usbeacon.com.tw and manage local beacon data for developer.
+
+
+###Properties###
+
+###Methods###
+```objc
++ (USBCManager *)defaultManager;
+```
+
+```objc
+-(void)updateDevicesWithDataQueryUUID:(NSString*)dataQueryUUID;
+```
+
+```objc
+-(USBeaconDevice *)deviceWithMajor:(int)major Minor:(int)minor;
+```
+
+```objc
+-(NSArray *)allDevices;
+
+```
