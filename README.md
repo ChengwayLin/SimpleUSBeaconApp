@@ -146,6 +146,8 @@ NSlog this USBeaconDevice.
 
 ##USBeaconInfo Class##
 ###Overview###
+USBeaconInfo is a model class to store a subset of usbeacon data for a specific proximity.
+
 ###Properties###
 ```
 @property (nonatomic,retain) NSString * tel;
@@ -180,6 +182,8 @@ NSlog this USBeaconDevice.
 @property (nonatomic,retain) NSDictionary * extend;
 ```
 **extend**<br> 
-NSlog this USBeaconDevice.
+extented data you defined on website is stored as NSDictionary in this extend property.
 
 
+##BeaconDetect Class##
+###Overview###
