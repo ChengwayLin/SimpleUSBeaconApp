@@ -85,7 +85,7 @@ Tells the delegate that data update process errors occured.
 ##USBeaconDevice Class##
 ###Overview###
 The CLBeacon class represents a USBeacon data with a specific pair of Major/Minor. In most case, you do not create instances of this class directly. The USBeaconManager object return data in this model class for you.
-
+###Properties###
 ```
 @property int major;
 ```
@@ -107,7 +107,9 @@ name of a usbeacon data.
 @property (nonatomic,retain) USBeaconInfo * info;
 ```
 **info**<br> 
-An object contain default infomation of a usbeacon data, presented in an USBeaconInfo object. On usbeacon.com.tw ,you can specify different set of data at each proximity, so here we have four other USBeaconInfo properties: infoAtImmediate, infoAtNear , infoAtFar and infoAtUnknownProximity.<br><br>
+a object contains a set of infomation of default  proximity  - immediate.<br>
+
+On usbeacon.com.tw ,you can specify different set of data at each proximity, so here we have four other USBeaconInfo properties: infoAtImmediate, infoAtNear , infoAtFar and infoAtUnknownProximity.<br><br>
 If you merely assign data for default(immediate) form, then USBeaconDevice will obtain your data in infoAtImmediate and info.<br><br>
 If you set '所有資料同Immediate', then info, infoAtImmediate, infoAtNear ,infoAtFar ,infoAtUnknownProximity would be the same.<br><br>
 Else if you specified data for each proximity, infoAtImmediate, infoAtNear ,infoAtFar ,infoAtUnknownProximity would obtain data you assigned respectively. And info property would has a copy of infoAtImmediate.
@@ -122,25 +124,25 @@ a object contains a set of infomation of proximity immediate.
 @property (nonatomic,retain) USBeaconInfo * infoAtNear;
 ```
 **infoAtNear**<br> 
-name of a usbeacon data.
+a object contains a set of infomation of proximity near.
 ```
 @property (nonatomic,retain) USBeaconInfo * infoAtFar;
 ```
 **infoAtFar**<br> 
-name of a usbeacon data.
+a object contains a set of infomation of proximity far.
 ```
 @property (nonatomic,retain) USBeaconInfo * infoAtUnknownProximity;
 ```
 **infoAtUnknownProximity**<br> 
-name of a usbeacon data.
-```
-+ (USBeaconDevice * )deviceWithMajor:(int)major Minor:(int)minor Name:(NSString*)name;
-```
-**name**<br> 
-name of a usbeacon data.
+a object contains a set of infomation of proximity unknown proximity.
+
+###Methods###
+
 ```
 -(void)logDevice;
 ```
+**-logDevice**<br> 
+NSlog this USBeaconDevice.
 
 ##USBeaconInfo Class##
 ###Overview###
