@@ -36,8 +36,6 @@ The USBeaconManager declares the programmatic interface for fetching Beacon rela
 ###Properties###
 
 ###Methods###
-
-**+ defaultManager **
 ```objc
 + (USBCManager *)defaultManager;
 ```
