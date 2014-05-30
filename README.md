@@ -39,12 +39,12 @@ The USBeaconManager declares the programmatic interface for fetching Beacon rela
 ```objc
 + (USBCManager *)defaultManager;
 ```
-defaultManager return an USBeaconManager object. This object is not static or singleton. So declare it as a property in your viewCotroller.
+**+ defaultManager** return an USBeaconManager object. (NOTE:This object is neither static nor singleton. So declare it as a property in your viewCotroller.)
 
 ```objc
 -(void)updateDevicesWithDataQueryUUID:(NSString*)dataQueryUUID;
 ```
-
+updateDevicesWithDataQueryUUID:
 
 ```objc
 -(USBeaconDevice *)deviceWithMajor:(int)major Minor:(int)minor;
