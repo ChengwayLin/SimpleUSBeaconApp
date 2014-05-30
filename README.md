@@ -187,3 +187,49 @@ extented data you defined on website is stored as NSDictionary in this extend pr
 
 ##BeaconDetect Class##
 ###Overview###
+BeaconDetect is a helper class based on iOS CoreLocation framework. It is to help you quick set up iBeacon ranging process. 
+
+###Properties###
+```
+@property (nonatomic,retain) NSMutableArray * targetUUIDs;
+```
+```
+@property (nonatomic,retain) NSString * targetUUID;
+```
+```
+@property (nonatomic,retain) NSArray * beaconList;
+```
+```
+@property (nonatomic,retain) CLBeacon * nearistBeacon;
+```
+```
+@property (nonatomic,retain) id <BeaconDetectDelegate> delegate;
+```
+
+
+###Methods###
+```
++ (BeaconDetect *)detectBeaconWithUUID:(NSString*)uuid;
+```
+**+ detectBeaconWithUUID:**<br> 
+NSlog this USBeaconDevice.
+```
++ (BeaconDetect *)detectBeaconWithUUIDs:(NSArray*)uuids;
+```
+**+ detectBeaconWithUUIDs:**<br> 
+NSlog this USBeaconDevice.
+```
+-(NSArray*)beaconsNoUnknownProximity:(NSArray*)original;
+```
+**- beaconsNoUnknownProximity:**<br> 
+NSlog this USBeaconDevice.
+```
+-(NSArray*)beaconsSortedByMajorMinor:(NSArray*)original;
+```
+**- beaconsSortedByMajorMinor:**<br> 
+NSlog this USBeaconDevice.
+```
+-(NSArray*)beaconsSortedByRSSI:(NSArray*)original;
+```
+**- beaconsSortedByRSSI:**<br> 
+NSlog this USBeaconDevice.
