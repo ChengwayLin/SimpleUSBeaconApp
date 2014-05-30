@@ -188,10 +188,13 @@ BeaconDetect is a helper class based on iOS CoreLocation framework. It is to hel
 ```
 @property (nonatomic,retain) NSMutableArray * targetUUIDs;
 ```
+**targetUUIDs**<br>
 Targeted uuids that BeaconDetect object is searching for. If you initialized this object with **+ detectBeaconWithUUIDs:** method, then it stored uuids in targetUUIDs.
 ```
+
 @property (nonatomic,retain) NSString * targetUUID;
 ```
+**targetUUID**<br>
 The only targeted uuid that BeaconDetect object is searching for. If you initialized this object with **+ detectBeaconWithUUID:** method, then the uuid is assigned to targetUUID.
 ```
 @property (nonatomic,retain) NSArray * beaconList;
@@ -215,27 +218,27 @@ The delegate object to receive update event.
 + (BeaconDetect *)detectBeaconWithUUID:(NSString*)uuid;
 ```
 **+ detectBeaconWithUUID:**<br> 
-NSlog this USBeaconDevice.
+Returns a BeaconDetect object and start to monitor region with the specific uuid and than range beacons.
 ```
 + (BeaconDetect *)detectBeaconWithUUIDs:(NSArray*)uuids;
 ```
 **+ detectBeaconWithUUIDs:**<br> 
-NSlog this USBeaconDevice.
+Returns a BeaconDetect object and start to monitor regions with the specific uuids and than range beacons.
 ```
 -(NSArray*)beaconsNoUnknownProximity:(NSArray*)original;
 ```
 **- beaconsNoUnknownProximity:**<br> 
-NSlog this USBeaconDevice.
+Returns an array with no CLBeacon with no iBeacon in Unknown Proximity.
 ```
 -(NSArray*)beaconsSortedByMajorMinor:(NSArray*)original;
 ```
 **- beaconsSortedByMajorMinor:**<br> 
-NSlog this USBeaconDevice.
+Returns an array sorted with UUID-MAJOR-MINOR
 ```
 -(NSArray*)beaconsSortedByRSSI:(NSArray*)original;
 ```
 **- beaconsSortedByRSSI:**<br> 
-NSlog this USBeaconDevice.
+Returns an array sorted with RSSI value
 
 ###BeaconDetectDelegate Protocol###
 
@@ -244,9 +247,9 @@ NSlog this USBeaconDevice.
 -(void)nearestBeaconChangeTo:(CLBeacon*)beacon;
 ```
 **- nearestBeaconChangeTo:**<br> 
-NSlog this USBeaconDevice.
+would be called, when nearistBeacon property changes.
 ```
 -(void)beaconListChangeTo:(NSArray*)beacons;
 ```
 **- beaconListChangeTo:**<br> 
-NSlog this USBeaconDevice.
+would be called everytime the systme updated new ranged iBeacons.
