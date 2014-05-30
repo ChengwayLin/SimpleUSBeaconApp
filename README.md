@@ -257,7 +257,7 @@ would be called everytime the systme updated new ranged iBeacons.
 
 How Use USBeaconSDK in Your Project
 =================
-1. drap USBeaconSDK folder in to your Xcode Project (Make sure you check you project name at Add to Target )
+1. drag USBeaconSDK folder into your Xcode Project (Make sure you check you project name at Add to Target )
 2. In Build Phases > Link Binary with Libraries, add 'libz.dylib' and 'libsqlite3.dylib'
 3. In Build Setting > Linking > Other Linker Flags, if right field is empty, then add -ObjC. (This is because USbeaconManager.a is based on FMDB. and FMDM has .o file)
 4. Done. Start use it
