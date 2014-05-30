@@ -34,6 +34,12 @@ The USBeaconManager declares the programmatic interface for fetching Beacon rela
 
 
 ###Properties###
+```
+@property (nonatomic,weak) id <USBCManagerDelegate> delegate;
+```
+**delegate**<br>
+The delegate object to receive update events.
+<br><br>
 
 ###Methods###
 
