@@ -40,30 +40,32 @@ The USBeaconManager declares the programmatic interface for fetching Beacon rela
 + (USBCManager *)defaultManager;
 ```
 **+ defaultManager** return an USBeaconManager object. (NOTE:This object is neither static nor singleton. So declare it as a property in your viewCotroller.)
-
+<br><br>
 ```objc
 -(void)updateDevicesWithDataQueryUUID:(NSString*)dataQueryUUID;
 ```
-**- updateDevicesWithDataQueryUUID:** fetch beacon data from specific account Data Query UUID. You can register your own account on www.usbeacon.com.tw. Fetched beacon data will be stored on local. After data fetched and stored, **USBeaconManager** calls **-USBCManagerUpdateComplete** delegate method to inform your app. If error happens during data downloading, it informs app through  **- USBCManagerUpdateError:**. <br><br>
+**- updateDevicesWithDataQueryUUID:** fetch beacon data from specific account Data Query UUID. You can register your own account on www.usbeacon.com.tw. Fetched beacon data will be stored on local. After data fetched and stored, USBeaconManager calls **-USBCManagerUpdateComplete** delegate method to inform your app. If errors occur during data downloading, it informs app through  **- USBCManagerUpdateError:**. <br><br>
 To use local data, you can call **- deviceWithMajor: Minor:**, that would retun local data in **USBeaconDevice** object. Besides, you can also call **- allDevices** ,that would return all local data in an NSArray of **USBeaconDevice**;
-
+<br><br>
 ```objc
 -(USBeaconDevice *)deviceWithMajor:(int)major Minor:(int)minor;
 ```
-**- deviceWithMajor: Minor:** return a **USBeaconDevice** object of speccific major and minor from local storage. If there is no this major/minor data, it return a empty **USBeaconDevice**.
-
+**- deviceWithMajor: Minor:** return a USBeaconDevice object of speccific major and minor from local storage. If there is no this major/minor data, it return a empty USBeaconDevice.
+<br><br>
 ```objc
 -(NSArray *)allDevices;
 ```
-**- allDevices** return an NSArray of **USBeaconDevice** ,that contains all local usbeacon device data.
+**- allDevices** return an NSArray of USBeaconDevice ,that contains all local usbeacon device data.
+<br><br>
 
-
-###USBeaconManagerDelegate###
+###USBeaconManagerDelegate Protocol###
 
 **@optional**
 ```objc
 -(void)USBCManagerUpdateComplete;
 ```
+Tells the delegate that data update process completed.
 ```objc
 -(void)USBCManagerUpdateError:(NSError*)error;
 ```
+Tells the delegate that data update process errors occured.
