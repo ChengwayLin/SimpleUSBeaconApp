@@ -152,32 +152,27 @@ USBeaconInfo is a model class to store a subset of usbeacon data for a specific 
 ```
 @property (nonatomic,retain) NSString * tel;
 ```
-**tel**<br> 
+
 ```
 @property (nonatomic,retain) NSString * url;
 ```
-**url**<br> 
-NSlog this USBeaconDevice.
+
 ```
 @property (nonatomic,retain) NSString * img;
 ```
-**img**<br> 
-NSlog this USBeaconDevice.
+
 ```
 @property (nonatomic,retain) NSString * note;
 ```
-**note**<br> 
-NSlog this USBeaconDevice.
+
 ```
 @property (nonatomic,retain) NSString * youtube;
 ```
-**youtube**<br> 
-NSlog this USBeaconDevice.
+
 ```
 @property (nonatomic,retain) NSString * describe;
 ```
-**describe**<br> 
-NSlog this USBeaconDevice.
+
 ```
 @property (nonatomic,retain) NSDictionary * extend;
 ```
